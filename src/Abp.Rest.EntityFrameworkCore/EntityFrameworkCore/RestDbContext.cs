@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Abp.Rest.Orders;
+using Microsoft.EntityFrameworkCore;
 using Abp.Rest.Users;
 using Volo.Abp.Data;
 using Volo.Abp.EntityFrameworkCore;
@@ -22,9 +23,9 @@ namespace Abp.Rest.EntityFrameworkCore
     {
         public DbSet<AppUser> Users { get; set; }
 
-        /* Add DbSet properties for your Aggregate Roots / Entities here.
-         * Also map them inside RestDbContextModelCreatingExtensions.ConfigureRest
-         */
+        public DbSet<Client> Clients { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Order> Orders { get; set; }
 
         public RestDbContext(DbContextOptions<RestDbContext> options)
             : base(options)
