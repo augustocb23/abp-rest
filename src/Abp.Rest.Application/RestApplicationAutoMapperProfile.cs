@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using Abp.Rest.Orders;
+using AutoMapper;
 
 namespace Abp.Rest
 {
@@ -6,9 +7,11 @@ namespace Abp.Rest
     {
         public RestApplicationAutoMapperProfile()
         {
-            /* You can configure your AutoMapper mapping configuration here.
-             * Alternatively, you can split your mapping configurations
-             * into multiple profile classes for a better organization. */
+            CreateMap<Client, ClientDto>();
+            CreateMap<ClientEditDto, Client>();
+            
+            CreateMap<Product, ProductDto>();
+            CreateMap<ProductEditDto, Product>();
         }
     }
 }
