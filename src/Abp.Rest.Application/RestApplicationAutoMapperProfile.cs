@@ -12,6 +12,9 @@ namespace Abp.Rest
             
             CreateMap<Product, ProductDto>();
             CreateMap<ProductEditDto, Product>();
+
+            CreateMap<Order, OrderDto>();
+            CreateMap<OrderItem, OrderItemDto>();
         }
     }
 }

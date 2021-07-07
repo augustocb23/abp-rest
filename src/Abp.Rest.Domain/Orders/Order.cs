@@ -6,6 +6,14 @@ namespace Abp.Rest.Orders
 {
     public class Order : AuditedAggregateRoot<Guid>
     {
+        public Order()
+        {
+        }
+
+        public Order(Guid id) : base(id)
+        {
+        }
+
         public Client Client { get; set; }
         public IEnumerable<OrderItem> Items { get; set; }
     }
