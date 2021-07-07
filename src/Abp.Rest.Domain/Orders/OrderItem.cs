@@ -13,7 +13,10 @@ namespace Abp.Rest.Orders
         {
         }
 
+        public Guid ProductId { get; set; }
         public Product Product { get; set; }
         public decimal Quantity { get; set; }
+        public Guid OrderId { get; set; }
+        public Order Order { get; set; }
     }
 }

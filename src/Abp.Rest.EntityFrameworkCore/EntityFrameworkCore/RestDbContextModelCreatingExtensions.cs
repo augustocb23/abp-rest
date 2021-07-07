@@ -11,8 +11,6 @@ namespace Abp.Rest.EntityFrameworkCore
         {
             Check.NotNull(builder, nameof(builder));
 
-            /* Configure your own tables/entities inside here */
-
             builder.Entity<Client>(b =>
             {
                 b.ToTable($"{RestConsts.DbTablePrefix}Clients", RestConsts.DbSchema);
@@ -37,8 +35,12 @@ namespace Abp.Rest.EntityFrameworkCore
                 b.ConfigureByConvention();
 
                 b.Property(item => item.Quantity).IsRequired();
+
+                b.HasOne(orderItem => orderItem.Order)
+                    .WithMany(order => order.Items)
+                    .IsRequired();
             });
-            
+
             builder.Entity<Order>(b =>
             {
                 b.ToTable($"{RestConsts.DbTablePrefix}Orders", RestConsts.DbSchema);

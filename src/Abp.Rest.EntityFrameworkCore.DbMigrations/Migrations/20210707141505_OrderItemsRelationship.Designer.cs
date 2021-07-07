@@ -3,15 +3,17 @@ using System;
 using Abp.Rest.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Volo.Abp.EntityFrameworkCore;
 
 namespace Abp.Rest.Migrations
 {
     [DbContext(typeof(RestMigrationsDbContext))]
-    partial class RestMigrationsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210707141505_OrderItemsRelationship")]
+    partial class OrderItemsRelationship
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

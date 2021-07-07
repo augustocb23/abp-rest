@@ -14,6 +14,7 @@ namespace Abp.Rest.Orders
         {
         }
 
+        public Guid ClientId { get; set; }
         public Client Client { get; set; }
         public IEnumerable<OrderItem> Items { get; set; }
     }
