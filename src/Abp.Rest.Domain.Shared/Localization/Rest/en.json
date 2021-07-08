@@ -2,8 +2,12 @@
   "culture": "en",
   "texts": {
     "Menu:Home": "Home",
+    "Menu:Orders": "Orders",
+    "Menu:Orders:List": "Orders list",
     "Menu:Clients": "Clients",
     "Menu:Clients:List": "Client list",
+    "Orders:ClientName": "Client name",
+    "Orders:Date": "Order date",
     "Welcome": "Welcome",
     "FullName": "Full name",
     "Add": "Add",

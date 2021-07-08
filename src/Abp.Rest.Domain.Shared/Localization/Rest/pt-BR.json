@@ -2,8 +2,12 @@
   "culture": "pt-BR",
   "texts": {
     "Menu:Home": "Principal",
+    "Menu:Orders": "Pedidos",
+    "Menu:Orders:List": "Lista de pedidos",
     "Menu:Clients": "Clientes",
     "Menu:Clients:List": "Lista de clientes",
+    "Orders:ClientName": "Nome do cliente",
+    "Orders:Date": "Data do pedido",
     "Welcome": "Seja bem-vindo!",
     "FullName": "Nome completo",
     "Add": "Adicionar",

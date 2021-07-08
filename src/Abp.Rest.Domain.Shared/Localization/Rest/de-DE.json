@@ -3,6 +3,8 @@
   "texts": {
     "Menu:Home": "Home",
     "Welcome": "Willkommen",
+    "Menu:Orders": "Bestellungen",
+    "Menu:Orders:List": "Bestellungsliste",
     "Menu:Clients": "Kunden",
     "Menu:Clients:List": "Kundenliste",
     "FullName": "Vollständiger Name",
