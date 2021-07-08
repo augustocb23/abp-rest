@@ -22,6 +22,16 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
+    },
+    "Watch run": {
+      "commandName": "Executable",
+      "launchBrowser": false,
+      "executablePath": "dotnet",
+      "commandLineArgs": "watch --project \".\\src\\Abp.Rest.HttpApi.Host\\Abp.Rest.HttpApi.Host.csproj\" run",
+      "workingDirectory": ".\\..\\..\\..\\..\\..",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
     }
   }
 }

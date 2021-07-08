@@ -2,7 +2,17 @@
   "culture": "pt-BR",
   "texts": {
     "Menu:Home": "Principal",
+    "Menu:Clients": "Clientes",
+    "Menu:Clients:List": "Lista de clientes",
     "Welcome": "Seja bem-vindo!",
-    "LongWelcomeMessage": "Bem-vindo a esta aplicação. Este é um projeto inicial baseado no ABP framework. Para mais informações, visite abp.io."
+    "FullName": "Nome completo",
+    "Add": "Adicionar",
+    "AddClient": "Adicionar cliente",
+    "Close": "Fechar",
+    "Edit": "Editar",
+    "Actions": "Ações",
+    "Delete": "Excluir",
+    "AreYouSureToDelete": "Tem certeza de que deseja excluir?",
+    "Confirmation": "Confirmação"
   }
 }

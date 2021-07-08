@@ -2,7 +2,17 @@
   "culture": "en",
   "texts": {
     "Menu:Home": "Home",
+    "Menu:Clients": "Clients",
+    "Menu:Clients:List": "Client list",
     "Welcome": "Welcome",
-    "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information, visit abp.io."
+    "FullName": "Full name",
+    "Add": "Add",
+    "AddClient": "Add client",
+    "Close": "Close",
+    "Edit": "Edit",
+    "Actions": "Actions",
+    "Delete": "Delete",
+    "AreYouSureToDelete": "Are you sure to delete?",
+    "Confirmation": "Confirmation"
   }
 }
