@@ -8,6 +8,8 @@
     "Menu:Clients:List": "Lista de clientes",
     "Orders:ClientName": "Nome do cliente",
     "Orders:Date": "Data do pedido",
+    "Orders:Quantity": "Quantidade",
+    "Orders:ProductName": "Nome do produto",
     "Welcome": "Seja bem-vindo!",
     "FullName": "Nome completo",
     "Add": "Adicionar",

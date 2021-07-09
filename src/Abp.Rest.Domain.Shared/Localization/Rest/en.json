@@ -8,6 +8,8 @@
     "Menu:Clients:List": "Client list",
     "Orders:ClientName": "Client name",
     "Orders:Date": "Order date",
+    "Orders:Quantity": "Quantity",
+    "Orders:ProductName": "Product name",
     "Welcome": "Welcome",
     "FullName": "Full name",
     "Add": "Add",
