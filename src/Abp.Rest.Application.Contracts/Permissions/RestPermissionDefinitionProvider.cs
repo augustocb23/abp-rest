@@ -8,10 +8,12 @@ namespace Abp.Rest.Permissions
     {
         public override void Define(IPermissionDefinitionContext context)
         {
-            var myGroup = context.AddGroup(RestPermissions.GroupName);
+            var defaultGroup = context.AddGroup(RestPermissions.GroupName);
 
-            //Define your own permissions here. Example:
-            //myGroup.AddPermission(RestPermissions.MyPermission1, L("Permission:MyPermission1"));
+            var ordersGroup = context.AddGroup(OrdersPermissions.GroupName);
+            var orders = ordersGroup.AddPermission(OrdersPermissions.Default, L("Permissions:Orders.Default"));
+            orders.AddChild(OrdersPermissions.Clients, L("Permissions:Orders.Clients"));
+            orders.AddChild(OrdersPermissions.Products, L("Permissions:Orders.Products"));
         }
 
         private static LocalizableString L(string name)
