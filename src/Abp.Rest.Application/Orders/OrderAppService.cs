@@ -10,7 +10,7 @@ using Volo.Abp.Domain.Repositories;
 
 namespace Abp.Rest.Orders
 {
-    public sealed class OrderAppService :
+    public class OrderAppService :
         ReadOnlyAppService<Order, OrderDto, Guid, PagedAndSortedResultRequestDto>,
         IOrderAppService
     {

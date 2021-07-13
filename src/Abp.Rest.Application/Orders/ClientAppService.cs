@@ -6,7 +6,7 @@ using Volo.Abp.Domain.Repositories;
 
 namespace Abp.Rest.Orders
 {
-    public sealed class ClientAppService :
+    public class ClientAppService :
         CrudAppService<Client, ClientDto, Guid, PagedAndSortedResultRequestDto, ClientEditDto>,
         IClientAppService
     {

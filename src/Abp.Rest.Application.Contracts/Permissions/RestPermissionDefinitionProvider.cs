@@ -14,6 +14,7 @@ namespace Abp.Rest.Permissions
             var orders = ordersGroup.AddPermission(OrdersPermissions.Default, L("Permissions:Orders.Default"));
             orders.AddChild(OrdersPermissions.Clients, L("Permissions:Orders.Clients"));
             orders.AddChild(OrdersPermissions.Products, L("Permissions:Orders.Products"));
+            orders.AddChild(OrdersPermissions.Orders, L("Permissions:Orders.Orders"));
         }
 
         private static LocalizableString L(string name)

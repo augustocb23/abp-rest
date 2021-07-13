@@ -6,7 +6,7 @@ using Volo.Abp.Domain.Repositories;
 
 namespace Abp.Rest.Orders
 {
-    public sealed class ProductAppService :
+    public class ProductAppService :
         CrudAppService<Product, ProductDto, Guid, PagedAndSortedResultRequestDto, ProductEditDto>,
         IProductAppService
     {
